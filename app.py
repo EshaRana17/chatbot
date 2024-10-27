@@ -3,7 +3,7 @@ import replicate
 import os
 
 # App title
-st.set_page_config(EazyChatbot")
+st.set_page_config("EazyChatbot")
 
 # Replicate Credentials
 with st.sidebar:

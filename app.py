@@ -3,7 +3,7 @@ import replicate
 import os
 
 # Set the page configuration with an image as an icon
-st.set_page_config(page_title="EazyChatbot"
+st.set_page_config(page_title="EazyChatbot")
 # Set your API token directly for testing
 replicate_api = "r8_3tTqwJvButjnd2EAGam8k784IG2VagA1QhNwr"
 os.environ['REPLICATE_API_TOKEN'] = replicate_api  # Set the environment variable

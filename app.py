@@ -1,9 +1,11 @@
 import streamlit as st
 import replicate
 import os
+
 # Set your Replicate API token
 REPLICATE_API_TOKEN = "r8_OFXkZn7fF7pFO5iA4rFcHx32TM3lhyt1ASf8C"
 os.environ['REPLICATE_API_TOKEN'] = REPLICATE_API_TOKEN
+
 # App title
 st.set_page_config(page_title="Chatbot")
 
@@ -47,9 +49,11 @@ st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # Function for generating LLaMA2 response
 def generate_llama2_response(prompt_input):
-    string_dialogue = "You are a helpful assistant. You do not respond as 'User ' or pretend to be 'User '. You only respond once as 'Assistant'."
+    string_dialogue = "You are a helpful assistant. You do not respond as 'User  ' or pretend to be 'User  '. You only respond once as 'Assistant'."
     for dict_message in st.session_state.messages:
         if dict_message["role"] == "user":
-            string_dialogue += ":User  " + dict_message["content"] + "\n\n"
+            string_dialogue += ":User   " + dict_message["content"] + "\n\n"
         else:
-            string_dialogue += "Assistant: " +
+            string_dialogue += "Assistant: " + "your response here"  # Replace with actual response
+
+# You can call this function with a prompt_input when needed

@@ -1,7 +1,9 @@
 import streamlit as st
 import replicate
 import os
-
+# Set your Replicate API token
+REPLICATE_API_TOKEN = "r8_OFXkZn7fF7pFO5iA4rFcHx32TM3lhyt1ASf8C"
+os.environ['REPLICATE_API_TOKEN'] = REPLICATE_API_TOKEN
 # App title
 st.set_page_config(page_title="Chatbot")
 
